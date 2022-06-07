@@ -1,14 +1,15 @@
 #include <stdio.h>
-
-int main(int argc, char **args) {
-  int list[7] = {5, 1, 2, 3, 7, 14, 6};
-  int max = -1;
-  // beacuse the result of sizeof is byte,a int is consisted by four byte
-  for (int i = 0; i < sizeof(list) / 4; i++) {
-    if (list[i] > max) {
-      max = list[i];
-    }
-  }
-  printf("%d\n", max);
-  return 0;
+#include <stdlib.h> 
+#include <time.h> 
+int main() {
+    int n;
+    printf("请输入一个数字：");
+    scanf("%d",&n);
+    srand((unsigned)time(NULL)); //设置随机数种子
+    for (int i= 0; i< n; i++) {
+	n = (rand() % 10) + 1 ;//产生1~10的随机数
+    //rand()产生的是一个很大的数，对其求余就可以达到限定范围的目的
+    printf("%d ", n);
+}
+    return 0;
 }
