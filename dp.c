@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-int m[100][100];//前i个物品装入容量为j的背包中获得的最大价值
+int m[3000][3000];//前i个物品装入容量为j的背包中获得的最大价值
 
 int max(int a,int b)
 {
