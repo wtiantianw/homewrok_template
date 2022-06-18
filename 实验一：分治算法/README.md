@@ -26,12 +26,11 @@
 + 实验预期结果：冒泡排序最慢，快速排序和归并排序时间复杂度相同，但经过实验验证快速排序的比较次数更少
 实验过程及实验结果（C版）
 （2）随机生成100个数三种算法的比较：
-![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E6%B5%8B%E9%AA%8C100.png)
-![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E6%B5%8B%E9%AA%8C100%EF%BC%882%EF%BC%89.png)
+![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9A%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/%E6%B5%8B%E9%AA%8C100.png)
+![image]([https://github.com/wtiantianw/homewrok_template/blob/main/%E6%B5%8B%E9%AA%8C100%EF%BC%882%EF%BC%89.png](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9A%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/%E6%B5%8B%E9%AA%8C100%EF%BC%882%EF%BC%89.png))
 
 对比两次随机生成数据的比较次数发现，两次的比较次数相差微乎其微，得出输入数据等价类的含义：就是把所有可能的输入数据，即程序的输入域划分成若干部分（子集），然后从每一个子集中选取少数具有代表性的数据作为测试用例。
-（3）![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E4%B8%8D%E5%90%8C%E8%A7%84%E6%A8%A1%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
-
+（3）![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E4%B8%8D%E5%90%8C%E8%A7%84%E6%A8%A1%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8A%98%E7%BA%BF%E5%9B%BE.png）
   通过生成不同规模的测试数据，我的结论如下：冒泡排序比较次数最多，归并排序次之，快速排序最少。
   渐进时间复杂度反映的是随着问题规模的变大，计算所需的时间的增长速度，与系数的多少关系不大。
   常见的时间复杂度及其增长速度比较为：
