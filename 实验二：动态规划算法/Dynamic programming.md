@@ -24,14 +24,12 @@
 算法空间复杂度与时间复杂度均为O(n*m)。其中m为背包容量
 实验过程及实验结果（C版）
 （1）因为运行结果图较多，所以在这里展示随机生成100个数的运行结果：
-![image](https://github.com/wtiantianw/homewrok_template/blob/main/DP-100.png)
-（2）![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E4%B8%8D%E5%90%8C%E8%A7%84%E6%A8%A1%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
-
-  通过生成不同规模的测试数据，我的结论如下：冒泡排序比较次数最多，归并排序次之，快速排序最少。
-  渐进时间复杂度反映的是随着问题规模的变大，计算所需的时间的增长速度，与系数的多少关系不大。
-  常见的时间复杂度及其增长速度比较为：
-O(1)＜O(log n)＜O(n)＜O(nlog n)＜O(n^2)＜O(n^3)< O(2^n)＜O(n!)＜O(n^n)
-根据折线图可以看出，归并排序和快速排序近乎在一条直线上，说明这两种算法归为一类复杂度，就是O（nlogn），而冒泡算法则归结为O（n^2）
+![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/DP-100%20.png)
+（2)因为测试比较较多，所以在这里展示一组测试数据：
+![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/%E4%B8%80%E7%BB%84%E6%95%B0%E6%8D%AE%E6%B5%8B%E8%AF%95%E5%9B%BE.png)
+下面是C值不变的情形下随着n增加、程序执行时间增加的趋势折线图：
+![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/%E8%B6%8B%E5%8A%BF%E5%9B%BE.png)
+（3）根据折线图我感觉，当背包容量一定时，改变物体的总数量n，对于时间的影响并无明显变化，只有细微的变化；但当物体的总数量一定，背包容量改变时，时间复杂度会明显增加。
 
 
 
