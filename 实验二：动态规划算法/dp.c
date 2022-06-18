@@ -3,6 +3,7 @@
 #include<time.h>
 
 int m[3000][3000];//前i个物品装入容量为j的背包中获得的最大价值
+int begintime,endtime;
 
 int max(int a,int b)
 {
@@ -72,13 +73,16 @@ int main()
     struct tm * lt;
     time (&t);//获取Unix时间戳。
     lt = localtime (&t);//转为时间结构。
-    printf ( "程序运行开始时间为：%d/%d/%d %d:%d:%d\n",lt->tm_year+1900, lt->tm_mon+1, lt->tm_mday, lt->tm_hour, lt->tm_min, lt->tm_sec);//输出结果
 
-    printf("请输入背包的最大容量:");
+
+    for(int i=0;i<=3;i++)
+    {
+        printf("请输入背包的最大容量:");
     scanf("%d",&Capacity);
 
     printf("输入物品数:");
     scanf("%d",&n);
+    begintime=clock();	//计时开始
 
     int *weight=(int *)malloc(n*sizeof(int));//物品的重量
     int *value=(int *)malloc(n*sizeof(int)); //物品的价值
@@ -100,15 +104,20 @@ int main()
     }
     printf("\n");
 
+
     int s=KnapsackDP(n,weight,value,Capacity);  //获得的最大价值
 
     Judge(Capacity,n,weight);  //判断那些物品被选择
 
     printf("最大物品价值为: ");
     printf("%d\n",s);
+    endtime = clock();	//计时结束
+    printf("Running Time：%dms\n", endtime-begintime);
     time (&t);//获取Unix时间戳。
     lt = localtime (&t);//转为时间结构。
-    printf ( "程序运行结束时间为：%d/%d/%d %d:%d:%d\n",lt->tm_year+1900, lt->tm_mon+1, lt->tm_mday, lt->tm_hour, lt->tm_min, lt->tm_sec);//输出结果
+    }
+
+
 
     return 0;
 }
