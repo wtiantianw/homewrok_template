@@ -29,6 +29,7 @@
 ![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/%E4%B8%80%E7%BB%84%E6%95%B0%E6%8D%AE%E6%B5%8B%E8%AF%95%E5%9B%BE.png)
 下面是C值不变的情形下随着n增加、程序执行时间增加的趋势折线图：
 ![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95/%E8%B6%8B%E5%8A%BF%E5%9B%BE.png)
+
 （3）根据折线图我感觉，当背包容量一定时，改变物体的总数量n，对于时间的影响并无明显变化，只有细微的变化；但当物体的总数量一定，背包容量改变时，时间复杂度会明显增加。
 
 
