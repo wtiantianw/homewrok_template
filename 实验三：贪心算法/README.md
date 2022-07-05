@@ -22,17 +22,10 @@
 (3) 与理论上的时间复杂度结论进行对比分析，完成实验报告。
 
 ## 实验预期结果与实际结果
-（2）n个物品（n=10, 20, 40, 100, 200, 400, 800, 2000），m设定为500
-![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9A%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/%E6%B5%8B%E9%AA%8C100.png)
-![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9A%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/%E6%B5%8B%E9%AA%8C100%EF%BC%882%EF%BC%89.png)
+（2）n个物品（n=10, 20, 40, 100, 200, 400, 800, 2000），m设定为800
+![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%89%EF%BC%9A%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4%E7%9A%84%E5%AF%B9%E6%AF%94%E6%9B%B2%E7%BA%BF%E5%9B%BE.png)
 
-对比两次随机生成数据的比较次数发现，两次的比较次数相差微乎其微，得出输入数据等价类的含义：就是把所有可能的输入数据，即程序的输入域划分成若干部分（子集），然后从每一个子集中选取少数具有代表性的数据作为测试用例。
-（3）![image](https://github.com/wtiantianw/homewrok_template/blob/main/%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9A%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95/%E4%B8%8D%E5%90%8C%E8%A7%84%E6%A8%A1%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8A%98%E7%BA%BF%E5%9B%BE.png)
-  通过生成不同规模的测试数据，我的结论如下：冒泡排序比较次数最多，归并排序次之，快速排序最少。
-  渐进时间复杂度反映的是随着问题规模的变大，计算所需的时间的增长速度，与系数的多少关系不大。
-  常见的时间复杂度及其增长速度比较为：
-O(1)＜O(log n)＜O(n)＜O(nlog n)＜O(n^2)＜O(n^3)< O(2^n)＜O(n!)＜O(n^n)
-根据折线图可以看出，归并排序和快速排序近乎在一条直线上，说明这两种算法归为一类复杂度，就是O（nlogn），而冒泡算法则归结为O（n^2）
+（3）算法的时间复杂度和空间复杂度为O(n2)
 
 
 
